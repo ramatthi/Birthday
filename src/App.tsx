@@ -1,14 +1,14 @@
-import React from 'react';
-import Home from './components/Home';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Wishes from "./pages/Wishes";
 
-
-
-const App: React.FC = () => {
+function App() {
   return (
-    <div className="font-serif text-gray-800">
-      <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/birthday" element={<Wishes />} />
+    </Routes>
   );
-};
+}
 
 export default App;

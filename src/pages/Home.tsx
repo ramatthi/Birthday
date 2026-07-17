@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div
       style={{
@@ -38,9 +41,20 @@ const Home = () => {
           }}
         >
           {
-            ["❤️","💕","💖","💗","💝","🎂","🎉","🎈","✨","🌸","🌹"][
-              Math.floor(Math.random() * 11)
-            ]
+            [
+              "❤️",
+              "💕",
+              "Happy Birthday",
+              "💖",
+              "💗",
+              "💝",
+              "🎂",
+              "🎉",
+              "🎈",
+              "✨",
+              "💚",
+              "💙",
+            ][Math.floor(Math.random() * 12)]
           }
         </motion.div>
       ))}
@@ -62,51 +76,65 @@ const Home = () => {
           zIndex: 10,
         }}
       >
-        <div style={{ fontSize: "55px", marginBottom: "20px" }}>
-          🎂 🎉
-        </div>
+      
 
         <h1
           style={{
-            fontSize: "52px",
             margin: 0,
-            lineHeight: 1.2,
+            fontSize: "60px",
+            lineHeight: 1.1,
             fontWeight: 700,
+            fontFamily: "'Playfair Display', serif",
+            background: "linear-gradient(135deg,#ff4d88,#ff8eb7)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            textShadow: "0 4px 20px rgba(255,105,180,.2)",
           }}
         >
-          Happy Birthday
-          
+          A Birthday
+          <br />
+          Surprise
         </h1>
 
-        <p
-          style={{
-            fontSize: "20px",
-            marginTop: "25px",
-            lineHeight: 1.7,
-          }}
-        >
-          Today is all about you —
-          <br />
-          the most special person in my world ✨
-        </p>
+       <p
+  style={{
+    fontSize: "20px",
+    marginTop: "25px",
+    lineHeight: 1.8,
+  }}
+>
+  Today isn't just your birthday...
+  <br />
+  <br />
+  It's the beginning of a little journey,
+  <br />
+  filled with smiles, memories,
+  <br />
+  and a special surprise. 🎁✨
+</p>
 
         <motion.button
           whileHover={{
             scale: 1.08,
-            boxShadow: "0 0 35px rgba(255,255,255,0.8)",
+            boxShadow: "0 0 35px rgba(255,105,180,.8)",
           }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => navigate("/birthday")}
           style={{
             marginTop: "35px",
-            padding: "16px 40px",
+            padding: "16px 45px",
             borderRadius: "50px",
             border: "none",
             cursor: "pointer",
             fontSize: "18px",
-            fontWeight: 600,
+            fontWeight: 700,
+            background: "linear-gradient(135deg,#ff4d88,#ff80ab)",
+            color: "#fff",
+            letterSpacing: "1px",
+            boxShadow: "0 12px 30px rgba(255,77,136,.35)",
           }}
         >
-          Let's Go ❤️
+          Unwrap the Surprise
         </motion.button>
       </motion.div>
     </div>
