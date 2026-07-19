@@ -462,7 +462,7 @@ const Gallery = () => {
             >
               May your smile shine brighter, your dreams grow bigger, and your heart always be filled with happiness. ✨
             </p>
-            <p
+            {/* <p
               style={{
                 color: "#E8D9CF",
                 fontSize: "1.15rem",
@@ -474,7 +474,7 @@ const Gallery = () => {
             >
               ────────────<br></br>
               Made with ❤️ especially for you
-            </p>
+            </p> */}
 
           </div>
 
