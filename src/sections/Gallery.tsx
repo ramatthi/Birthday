@@ -54,16 +54,16 @@ const heroPhotos = [
   { src: "/asserts/mine 2.jpeg", cls: "polaroid-b" },
 ];
 
-const glimpsePhotos = [
-  "/asserts/Glimpse1.jpg",
-  "/asserts/Glimpse2.jpg",
-  "/asserts/Glimpse3.jpg",
-  "/asserts/Glimpse4.jpg",
-  "/asserts/Glimpse5.jpg",
-  "/asserts/Glimpse6.jpg",
-  "/asserts/Glimpse7.jpg",
-  "/asserts/Glimpse9.jpg",
-];
+// const glimpsePhotos = [
+//   "/asserts/Glimpse1.jpg",
+//   "/asserts/Glimpse2.jpg",
+//   "/asserts/Glimpse3.jpg",
+//   "/asserts/Glimpse4.jpg",
+//   "/asserts/Glimpse5.jpg",
+//   "/asserts/Glimpse6.jpg",
+//   "/asserts/Glimpse7.jpg",
+//   "/asserts/Glimpse9.jpg",
+// ];
 
 
 
