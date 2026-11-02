@@ -25,7 +25,7 @@ const Final = () => {
         }}
       >
         {/* Heading */}
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
@@ -39,11 +39,11 @@ const Final = () => {
           }}
         >
           Happy Birthday
-        </motion.h1>
+        </motion.h1> */}
         l
 
         {/* Subtitle */}
-        <motion.h2
+        {/* <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -56,7 +56,7 @@ const Final = () => {
           }}
         >
           May This Year Bring You Endless Happiness
-        </motion.h2>
+        </motion.h2> */}
 
         {/* Glass Card */}
         <motion.div

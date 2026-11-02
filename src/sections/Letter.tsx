@@ -3,17 +3,30 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const LETTER = `Happy Birthday! ❤️
 
-I hope today brings you endless happiness, beautiful memories, and countless reasons to smile.
+I don't really know where to begin, because there are so many things I could say, yet somehow words never feel enough.
 
-Keep smiling, keep growing, and never lose the beautiful things that make you who you are.
+Even though things between us are different now, I couldn't let this special day pass without wishing you. Maybe I don't have the same place in your life anymore, maybe we don't talk like we used to, and maybe we're just two people living separate lives now. But that doesn't mean I've forgotten the beautiful memories we once shared.
 
-And remember, if you ever need any help or someone to stand by you, feel free to call me. I'll always be there for you whenever you need me.
+Honestly, I still miss you sometimes. Not just our conversations, but the little things, your presence, your smile, and the way ordinary moments felt special when you were around. There are certain memories that time doesn't erase, and you're part of many of mine.
 
-You deserve all the happiness in the world.
+There was a time when I imagined a whole lifetime with you. Not just beautiful moments, but everything that comes with life — growing together, standing beside each other through difficult days, building a home, getting married, and growing old together. I genuinely believed we would get to live that story. But sometimes, even the dreams we believe in with all our hearts don't reach the ending we imagined. Maybe that part of our story remained unfinished, but it will always be a dream I once held close to my heart.
 
-Stay happy, stay blessed, and keep shining.
+I'm not writing this to bring back the past, to expect anything from you, or to make you feel emotional. I just wanted you to know that someone out here still wishes the very best for you, even from a distance.
 
-With warm wishes, always. 🦋🤍`;
+On your special day, I hope life gives you everything your heart has been quietly wishing for. I hope you smile more, worry less, achieve everything you've dreamed of, and find happiness in even the smallest moments. May you always be surrounded by people who genuinely care for you and make you feel loved.
+
+We may not be creating new memories together anymore, but I'll always be grateful for the ones we got to create. Some people come into our lives and leave beautiful memories that stay long after everything changes. For me, you'll always be one of those people.
+
+**Happy Birthday once again!** Keep smiling, keep shining, and never lose that beautiful part of yourself.
+
+No expectations. No conditions. Just a genuine wish from someone who once shared a beautiful chapter with you and still wishes happiness for you.
+
+**Take care of yourself. You deserve all the beautiful things life has to offer. ❤️**
+
+With warmth and a thousand unspoken wishes,
+
+**Ram**
+`;
 
 const Letter = () => {
   const [open, setOpen] = useState(false);
@@ -198,6 +211,13 @@ const Letter = () => {
                 <br />
                 written just for you. 💌
               </p>
+              <motion.p
+  className="click-hint"
+  animate={{ y: [0, 5, 0], opacity: [0.7, 1, 0.7] }}
+  transition={{ duration: 1.5, repeat: Infinity }}
+>
+  ↓ Click below to open your surprise ↓
+</motion.p>
 
               <motion.button
                 className="btn"
