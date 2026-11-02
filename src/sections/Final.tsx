@@ -110,7 +110,7 @@ const Final = () => {
               marginBottom: "40px",
             }}
           >
-            Happy Birthday, Pravallika!
+            Happy Birthday!
           </p>
 
           <motion.button
@@ -153,7 +153,7 @@ const Final = () => {
               }}
             />
 
-            Made with ❤️
+           Made with ❤️ by Ram
             <br />
 
 

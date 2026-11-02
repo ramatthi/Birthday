@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const LETTER = `Happy Birthday, Pravallika! 
+const LETTER = `Happy Birthday! ❤️
 
-Wishing you a day filled with happiness, laughter, and beautiful memories.
+I hope today brings you endless happiness, beautiful memories, and countless reasons to smile.
 
-May your smile shine brighter,
-your dreams grow bigger,
-and your heart always be filled with happiness.
+Keep smiling, keep growing, and never lose the beautiful things that make you who you are.
 
-May this year bring you success, good health, exciting opportunities, and countless reasons to smile.
+And remember, if you ever need any help or someone to stand by you, feel free to call me. I'll always be there for you whenever you need me.
 
-Enjoy every moment of your special day and have an amazing year ahead!
+You deserve all the happiness in the world.
 
-With Warm Wishes.
+Stay happy, stay blessed, and keep shining.
 
-`;
+With warm wishes, always. 🦋🤍`;
 
 const Letter = () => {
   const [open, setOpen] = useState(false);

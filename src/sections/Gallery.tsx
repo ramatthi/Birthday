@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 
 
 const calendar = [
-  "", "", "", "1", "2", "3", "4",
-  "5", "6", "7", "8", "9", "10", "11",
-  "12", "13", "14", "15", "16", "17", "18",
-  "19", "20", "21", "22", "23", "24", "25",
-  "26", "27", "28", "29", "30", "31",
+  "1", "2", "3", "4", "5", "6", "7",
+  "8", "9", "10", "11", "12", "13", "14",
+  "15", "16", "17", "18", "19", "20", "21",
+  "22", "23", "24", "25", "26", "27", "28",
+  "29", "30", "", "", "", "", "",
 ];
 
 // Scroll-reveal helper (framer-motion isn't used here).
@@ -50,10 +50,8 @@ const Reveal = ({ children, className, style }: RevealProps) => {
 };
 
 const heroPhotos = [
-  { src: "/asserts/image1.jpg", cls: "polaroid-a" },
-  { src: "/asserts/image2.jpg", cls: "polaroid-b" },
-  { src: "/asserts/image4.jpg", cls: "polaroid-c" },
-  { src: "/asserts/image3.jpg", cls: "polaroid-d" },
+  { src: "/asserts/mine.jpeg", cls: "polaroid-a" },
+  { src: "/asserts/mine 2.jpeg", cls: "polaroid-b" },
 ];
 
 const glimpsePhotos = [
@@ -213,14 +211,14 @@ const Gallery = () => {
         @media (min-width: 901px) {
           .collage {
             max-width: 640px;
-            padding-top: 105%;
+            padding-top: 100%;
             margin-left: auto;
           }
         }
         .polaroid {
           position: absolute;
           background: #fdfaf6;
-          padding: 10px 10px 34px;
+          padding: 12px 12px 42px;
           border-radius: 4px;
           box-shadow: 0 20px 35px rgba(0,0,0,.35);
         }
@@ -237,18 +235,33 @@ const Gallery = () => {
           top: -10px;
           left: 50%;
           transform: translateX(-50%) rotate(-3deg);
-          width: 44px;
-          height: 18px;
+          width: 48px;
+          height: 19px;
           background: rgba(230,220,205,.85);
         }
-        .polaroid-a { top: 2%;  left: 0%;   width: 40%; height: 34%; transform: rotate(-9deg); z-index: 1; }
-        .polaroid-b { top: 0%;  left: 56%;  width: 42%; height: 36%; transform: rotate(7deg);  z-index: 1; }
-        .polaroid-c { top: 30%; left: 24%;  width: 46%; height: 40%; transform: rotate(-2deg); z-index: 3; }
-        .polaroid-d { top: 46%; left: -2%;  width: 40%; height: 34%; transform: rotate(6deg);  z-index: 2; }
-        .heart-doodle { position: absolute; width: 90px; bottom: 4%; right: 2%; z-index: 4; }
+
+        /* Two larger hero photos */
+        .polaroid-a {
+          top: 8%;
+          left: 2%;
+          width: 54%;
+          height: 62%;
+          transform: rotate(-7deg);
+          z-index: 2;
+        }
+        .polaroid-b {
+          top: 20%;
+          right: 2%;
+          width: 54%;
+          height: 62%;
+          transform: rotate(6deg);
+          z-index: 3;
+        }
+
+        .heart-doodle { position: absolute; width: 90px; bottom: 2%; right: 1%; z-index: 4; }
         .heart-mini { position: absolute; width: 26px; opacity: .8; }
-        .heart-mini.one { top: 6%; left: 44%; }
-        .heart-mini.two { top: 40%; right: 6%; }
+        .heart-mini.one { top: 5%; left: 48%; }
+        .heart-mini.two { top: 48%; right: 0%; }
 
         /* ---------- FEATURES ---------- */
         .features {
@@ -350,7 +363,7 @@ const Gallery = () => {
         .g-polaroid:nth-child(odd) { transform: rotate(-3deg); }
         .g-polaroid:nth-child(even) { transform: rotate(3deg); }
         .g-polaroid:hover { transform: rotate(0deg) scale(1.04); z-index: 2; }
-        .g-polaroid img { width: 100%; height: 250px; object-fit: cover; border-radius: 2px; display: block; }
+        .g-polaroid img { width: 100%; height: 450px; object-fit: cover; object-position: center top; border-radius: 2px; display: block; }
         .glimpse-caption {
           text-align: center; font-style: italic; color: #8a7a71; margin-top: 40px; font-size: 15px;
         }
@@ -375,7 +388,12 @@ const Gallery = () => {
           .hero-title { font-size: 42px; text-align: center; }
           .hero-eyebrow, .hero-sub { text-align: center; margin-left: auto; margin-right: auto; }
           .hero-cta { margin: 0 auto; }
-          .collage { max-width: 380px; margin: 10px auto 0; padding-top: 100%; }
+          .collage { max-width: 420px; margin: 10px auto 0; padding-top: 105%; }
+          .polaroid { padding: 9px 9px 32px; }
+          .polaroid-a { top: 8%; left: 0%; width: 56%; height: 60%; }
+          .polaroid-b { top: 22%; right: 0%; width: 56%; height: 60%; }
+          .heart-doodle { width: 64px; }
+          .heart-mini { width: 20px; }
 
           .features {
             padding: 40px 24px 10px;
@@ -391,7 +409,7 @@ const Gallery = () => {
 
           .glimpse { padding: 50px 24px 60px; }
           .glimpse-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
-          .g-polaroid img { height: 130px; }
+          .g-polaroid img { height: 250px; }
 
           .closing-text { font-size: 18px; }
         }
@@ -446,7 +464,7 @@ const Gallery = () => {
                   textShadow: "0 3px 12px rgba(255,95,149,.25)",
                 }}
               >
-                Pravallika Jessie
+                Butterfly 🦋
               </span>
             </h1>
 
@@ -462,7 +480,7 @@ const Gallery = () => {
             >
               May your smile shine brighter, your dreams grow bigger, and your heart always be filled with happiness. ✨
             </p>
-            {/* <p
+            <p
               style={{
                 color: "#E8D9CF",
                 fontSize: "1.15rem",
@@ -474,27 +492,28 @@ const Gallery = () => {
             >
               ────────────<br></br>
               Made with ❤️ especially for you
-            </p> */}
+            </p>
 
           </div>
 
           <div className="collage">
-            {heroPhotos.map((p) => (
-              <div key={p.src} className={`polaroid ${p.cls}`}>
-                <img src={p.src} alt="" />
-              </div>
-            ))}
-            <HeartDoodle className="heart-doodle" />
-            <HeartDoodle className="heart-mini one" />
-            <HeartDoodle className="heart-mini two" />
-          </div>
+  {heroPhotos.map((p) => (
+    <div key={p.src} className={`polaroid ${p.cls}`}>
+      <img src={p.src} alt="" />
+    </div>
+  ))}
+
+  <HeartDoodle className="heart-doodle" />
+  <HeartDoodle className="heart-mini one" />
+  <HeartDoodle className="heart-mini two" />
+</div>
         </div>
       </section>
 
       {/* CALENDAR + QUOTE */}
       <Reveal className="cal-section" style={{ display: "grid" }}>
         <div className="cal-card">
-          <div className="cal-header">✦ July 2026 ✦</div>
+          <div className="cal-header">✦ November 2026 ✦</div>
           <div className="cal-weekrow">
             {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((d) => (
               <div key={d}>{d}</div>
@@ -504,13 +523,13 @@ const Gallery = () => {
             {calendar.map((day, i) => {
               if (day === "") return <div key={i} />;
 
-              const isBday = day === "20";
+              const isBday = day === "3";
               return (
                 <div
                   key={i}
                   className={`cal-cell  ${isBday ? "bday" : ""}`}
                 >
-                  {isBday ? "20" : day}
+                  {isBday ? "03" : day}
                 </div>
               );
             })}
@@ -528,8 +547,8 @@ const Gallery = () => {
               and countless reasons to smile.
               <br />
               <br />
-              Queens are born in July,
-              and today the crown shines a little brighter. 👑
+             Queens are born in November, 
+             and today, the crown shines a little brighter. 👑✨
             </p>
 
           </div>
@@ -538,7 +557,7 @@ const Gallery = () => {
       </Reveal>
 
       {/* GLIMPSE OF US */}
-      <section className="glimpse">
+      {/* <section className="glimpse">
         <Reveal className="glimpse-head">
           Her Beautiful Moments ❤️
         </Reveal>
@@ -552,7 +571,7 @@ const Gallery = () => {
         </div>
 
         <p className="glimpse-caption">A collection of beautiful smiles and unforgettable moments. ♡</p>
-      </section>
+      </section> */}
 
     </div>
   );
