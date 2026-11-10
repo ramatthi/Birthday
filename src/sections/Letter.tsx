@@ -5,15 +5,17 @@ const LETTER = `
 
 Happiest Birthday, Babi! ❤️🎂
 
-Wishing you a wonderful year ahead filled with happiness, good health, success and countless reasons to smile. May everything you've been wishing and working for fall into place. You truly deserve all the good things life has to offer.
+Wishing you a beautiful year ahead filled with happiness, good health, success and everything your heart wishes for. May life bring you countless reasons to smile, wonderful opportunities and all the happiness you truly deserve.
 
-I hope this new year of your life brings you lots of peace, beautiful opportunities, personal growth and unforgettable moments. Keep smiling, keep shining and never stop being the good person you are.
+I hope this new chapter brings you peace, growth and beautiful moments. Keep smiling, keep shining and achieve everything you've always dreamed of.
 
-And one thing I genuinely want to say... Appatlo you showed me a lot of care, concern and affection. Maybe I couldn't understand things properly at that time. My fears and certain situations made me handle things differently, and somewhere my actions might have hurt you. I'm genuinely sorry for that. I never intended to make you go through a difficult time.
+There is one thing I genuinely want to tell you. Appatlo you showed me so much care, concern and affection, and the efforts you made for me were truly genuine. But unfortunately, because of my fears, certain situations and the way I handled things, I ended up hurting you a lot. I know you went through a really difficult phase because of me, and I won't deny that. I am genuinely sorry for the pain I caused you. Maybe I couldn't understand things properly back then, but that doesn't make what happened any less painful for you.
 
-Just wanted to acknowledge that and wish you genuinely well. No expectations, just a heartfelt birthday wish.
+I don't expect anything from this message. I just didn't want your birthday to pass without wishing you and acknowledging the kindness you once showed me.
 
-Have the happiest birthday, Babi! Stay blessed and be happy always.❤️
+You deserve happiness, peace and all the beautiful things life has to offer.
+
+Once again, Happiest Birthday, Babi! Take care and stay happy always ❤️
 `;
 
 const Letter = () => {
