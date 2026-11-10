@@ -1,31 +1,19 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const LETTER = `Happy Birthday! ❤️
+const LETTER = `
 
-I don't really know where to begin, because there are so many things I could say, yet somehow words never feel enough.
+Happiest Birthday, Babi! ❤️🎂
 
-Even though things between us are different now, I couldn't let this special day pass without wishing you. Maybe I don't have the same place in your life anymore, maybe we don't talk like we used to, and maybe we're just two people living separate lives now. But that doesn't mean I've forgotten the beautiful memories we once shared.
+Wishing you a wonderful year ahead filled with happiness, good health, success and countless reasons to smile. May everything you've been wishing and working for fall into place. You truly deserve all the good things life has to offer.
 
-Honestly, I still miss you sometimes. Not just our conversations, but the little things, your presence, your smile, and the way ordinary moments felt special when you were around. There are certain memories that time doesn't erase, and you're part of many of mine.
+I hope this new year of your life brings you lots of peace, beautiful opportunities, personal growth and unforgettable moments. Keep smiling, keep shining and never stop being the good person you are.
 
-There was a time when I imagined a whole lifetime with you. Not just beautiful moments, but everything that comes with life — growing together, standing beside each other through difficult days, building a home, getting married, and growing old together. I genuinely believed we would get to live that story. But sometimes, even the dreams we believe in with all our hearts don't reach the ending we imagined. Maybe that part of our story remained unfinished, but it will always be a dream I once held close to my heart.
+And one thing I genuinely want to say... Appatlo you showed me a lot of care, concern and affection. Maybe I couldn't understand things properly at that time. My fears and certain situations made me handle things differently, and somewhere my actions might have hurt you. I'm genuinely sorry for that. I never intended to make you go through a difficult time.
 
-I'm not writing this to bring back the past, to expect anything from you, or to make you feel emotional. I just wanted you to know that someone out here still wishes the very best for you, even from a distance.
+Just wanted to acknowledge that and wish you genuinely well. No expectations, just a heartfelt birthday wish.
 
-On your special day, I hope life gives you everything your heart has been quietly wishing for. I hope you smile more, worry less, achieve everything you've dreamed of, and find happiness in even the smallest moments. May you always be surrounded by people who genuinely care for you and make you feel loved.
-
-We may not be creating new memories together anymore, but I'll always be grateful for the ones we got to create. Some people come into our lives and leave beautiful memories that stay long after everything changes. For me, you'll always be one of those people.
-
-**Happy Birthday once again!** Keep smiling, keep shining, and never lose that beautiful part of yourself.
-
-No expectations. No conditions. Just a genuine wish from someone who once shared a beautiful chapter with you and still wishes happiness for you.
-
-**Take care of yourself. You deserve all the beautiful things life has to offer. ❤️**
-
-With warmth and a thousand unspoken wishes,
-
-**Ram**
+Have the happiest birthday, Babi! Stay blessed and be happy always.❤️
 `;
 
 const Letter = () => {

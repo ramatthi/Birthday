@@ -50,8 +50,8 @@ const Reveal = ({ children, className, style }: RevealProps) => {
 };
 
 const heroPhotos = [
-  { src: "/asserts/mine.jpeg", cls: "polaroid-a" },
-  { src: "/asserts/mine 2.jpeg", cls: "polaroid-b" },
+  { src: "/asserts/Ravindra.jpeg", cls: "polaroid-a" },
+  { src: "/asserts/Ravindra1.jpeg", cls: "polaroid-b" },
 ];
 
 // const glimpsePhotos = [
@@ -464,7 +464,7 @@ const Gallery = () => {
                   textShadow: "0 3px 12px rgba(255,95,149,.25)",
                 }}
               >
-                Butterfly 🦋
+                Ravindra
               </span>
             </h1>
 
@@ -480,7 +480,7 @@ const Gallery = () => {
             >
               May your smile shine brighter, your dreams grow bigger, and your heart always be filled with happiness. ✨
             </p>
-            <p
+            {/* <p
               style={{
                 color: "#E8D9CF",
                 fontSize: "1.15rem",
@@ -492,7 +492,7 @@ const Gallery = () => {
             >
               ────────────<br></br>
               Made with ❤️ especially for you
-            </p>
+            </p> */}
 
           </div>
 
@@ -523,13 +523,13 @@ const Gallery = () => {
             {calendar.map((day, i) => {
               if (day === "") return <div key={i} />;
 
-              const isBday = day === "3";
+              const isBday = day === "11";
               return (
                 <div
                   key={i}
                   className={`cal-cell  ${isBday ? "bday" : ""}`}
                 >
-                  {isBday ? "03" : day}
+                  {isBday ? "11" : day}
                 </div>
               );
             })}
@@ -547,8 +547,7 @@ const Gallery = () => {
               and countless reasons to smile.
               <br />
               <br />
-             Queens are born in November, 
-             and today, the crown shines a little brighter. 👑✨
+              Wishing you a day filled with love, laughter, and all the things  
             </p>
 
           </div>

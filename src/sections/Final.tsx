@@ -40,7 +40,7 @@ const Final = () => {
         >
           Happy Birthday
         </motion.h1> */}
-        l
+        
 
         {/* Subtitle */}
         {/* <motion.h2
@@ -153,7 +153,7 @@ const Final = () => {
               }}
             />
 
-           Made with ❤️ by Ram
+           Made with ❤️
             <br />
 
 
